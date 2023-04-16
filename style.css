@@ -17,7 +17,7 @@ body {
   background: white;
   padding: 2rem 1rem;
   border-radius: 5px;
-  max-width: 60%;
+  max-width: 65%;
 }
 form {
   display: flex;
@@ -67,6 +67,6 @@ form {
   line-height: 1.3rem;
 }
 .example {
-  padding-left: rem;
+  padding-left: 1rem;
   border-left: 3px solid #212e63;
 }

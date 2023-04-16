@@ -20,6 +20,7 @@
 
 <body>
 <section class = 'dictionary'>
+  <audio id = 'sound'></audio>
   <div class = 'content'>
     <form>
       <input class = 'text' type = 'text' placeholder = 'Type the word here'>
@@ -27,8 +28,8 @@
     </form>
     <div class = 'word'>
       <h3>Word</h3>
-      <button>
-        <i id = 'sound'class="fa-solid fa-volume-up"></i>
+      <button onclick="playSound()">
+        <i class="fa-solid fa-volume-up"></i>
       </button>
     </div>
     <span class='partofspeech'>

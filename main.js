@@ -1,6 +1,5 @@
 document.querySelector('.search').addEventListener('click', getfn)
 const sound = document.querySelector('#sound')
-sound.addEventListener('click', playSound)
 function getfn() {
     let input = document.querySelector('.text').value
 
@@ -13,7 +12,7 @@ function getfn() {
     document.querySelector('.transcription').innerText = data[0].phonetic
     document.querySelector('.definition').innerText = data[0].meanings[0].definitions[0].definition
     document.querySelector('.example').innerText = data[0].meanings[0].definitions[0].example
-    sound.setAttribute("src", `${data[0].phonetics[0].audio}`)
+    sound.setAttribute("src", data[0].phonetics[0].audio)
     console.log(sound)
    })
 }
