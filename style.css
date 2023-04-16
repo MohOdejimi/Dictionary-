@@ -1,37 +1,72 @@
 body {
   padding: 0;
   margin: 0;
+  background: #2b2c32;
 }
 .dictionary {
-  text-align: center;
-  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #2b2c32;
 }
-input,button {
-  margin-top: 1rem;
-}
-input {
-  margin-right: .5rem;
-}
+
 .content {
-  padding: 2rem;
+  font-family: lato;
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  max-width: 60%;
 }
-.head {
+form {
   display: flex;
   gap: 1rem;
-  border: 1px solid black;
-}
-.word {
-  font-size: 2rem;
-  font-family: lato;
-  align-self: center;
-}
-.partOfSpeech {
-  font-size: 1rem;
-  color: red;
-  align-self: center;
-  color: steelblue;
   font-family: poppins;
 }
-footer {
-  text-align: center;
+.text {
+  border: none;
+  outline: none;
+  padding-left: .5rem;
+  border-bottom: 1px solid #212e63;
+}
+.search {
+  border: none;
+  outline: none;
+  background: #212e63;
+  color: white;
+  padding: .4rem;
+  border-radius: 5px;
+}
+.result {
+  position: relative;
+}
+.word {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.word button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.partofspeech {
+  display: flex;
+  gap: .5rem;
+  font-size: .8rem;
+  margin-top: -1rem;
+}
+.partofspeech p {
+  font-weight: 100;
+}
+.definition {
+  font-style: italic;
+}
+.definitions p {
+  line-height: 1.3rem;
+}
+.example {
+  padding-left: rem;
+  border-left: 3px solid #212e63;
 }

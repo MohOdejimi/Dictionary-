@@ -15,30 +15,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/102bc8442d.js" crossorigin ="anonymous"></script>
 </head>
 
 <body>
-  <div class = 'dictionary'>
-    <label for = 'word'>What word do you want to look up?</label>
-    <input id = 'word' type = 'text' >
-    <button type = 'button'>Get</button>
-  </div>
-  <section class = 'content'>
-    <div class = 'head'>
-     <h4 class = 'word'>Word</h4>
-     <h4 class = 'partOfSpeech'>Part of speech</h4>
+<section class = 'dictionary'>
+  <div class = 'content'>
+    <form>
+      <input class = 'text' type = 'text' placeholder = 'Type the word here'>
+      <input class = 'search' type = 'button' value = 'Search'>
+    </form>
+    <div class = 'word'>
+      <h3>Word</h3>
+      <button>
+        <i id = 'sound'class="fa-solid fa-volume-up"></i>
+      </button>
     </div>
-    <div class = 'phonetics'>
-      <p class = 'transcription'>Transcription</p>
-      <ul>
-        <li class = 'one'>Meaning</li>
-        <li class = 'two'></li>
-      </ul>
-    </div>  
-    </section>
+    <span class='partofspeech'>
+      <p class = 'partOfSpeech'>verb</p>
+      <p class = 'transcription'>transcription</p>
+    </span>
+    <div class = 'definitions'>
+      <p class = 'definition'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+      <p class = 'example'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+    </div>
+  </div>
+</section>
  <!-- Project -->
+ <p></p>
  <footer>
-   <p>&copy; 2023. Designed and Built by Moh Odejimi</p>
+   <!--<p>&copy; 2023. Designed and Built by Moh Odejimi</p>-->
  </footer>
   <script src="main.js"></script>
 </body>
