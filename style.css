@@ -5,6 +5,7 @@ body {
 }
 .dictionary {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -29,6 +30,7 @@ form {
   outline: none;
   padding-left: .5rem;
   border-bottom: 1px solid #212e63;
+  font-size: 1em;
 }
 .search {
   border: none;
@@ -69,4 +71,15 @@ form {
 .example {
   padding-left: 1rem;
   border-left: 3px solid #212e63;
+}
+.copyright {
+  align-self: center;
+}
+footer p {
+  color: white;
+}
+@media all and (min-width: 800px) {
+  .content {
+    max-width: 40%;
+  }
 }
